@@ -22,7 +22,7 @@ buildspecs:
       PYTHONNOUSERSITE: 1
       SLURM_EXACT: 1
       SLURM_MEM_PER_NODE: 0
-    sbatch: ["-t 15", "-N 2", "-C gpu"]
+    sbatch: ["-t 15", "-N 2", "-C gpu", "-A m3503_g"]
     run: bash ./run_forces_gpu_perlmutter.sh
 
 maintainers:
